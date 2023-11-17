@@ -3,22 +3,21 @@
   padding: 0;
 }
 html {
-    display:inline-flexbox;
-    margin-top: 20px;
-    text-align:center;
-} 
+  display: inline-flexbox;
+  margin-top: 20px;
+  text-align: center;
+}
 nav .topnav {
   background-color: rgb(38, 34, 34);
   font-size: 2em;
 }
 .topnav ul li {
-  font-family: 'Courier New', Courier, monospace;
-  font-weight:900;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
   color: chocolate;
-  
 }
- nav ul li a{ 
-  list-style: none; 
+nav ul li a {
+  list-style: none;
   text-decoration: none;
   float: right;
   display: block;
@@ -36,8 +35,8 @@ nav .topnav {
 }
 
 h1 {
- color: brown;
+  color: brown;
 }
- p {
+p {
   font-size: 1em;
 }
