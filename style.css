@@ -4,20 +4,33 @@
   list-style: none;
 }
 html {
-  margin-top: 40px;
-    text-align: center;
-    size: 1.5em;
+    display:inline-flexbox;
+    margin-top: 20px;
+    text-align:center;
     background-color: azure;
 } 
-body {
-  line-height: 50px;
+ .topnav ul li { 
+  display:inline;
+  float:left;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  padding: 10px 12px;
+  color: rgb(12, 12, 12);
+  background-color: #181515;
+  font-size: 1.5em;
+
+  overflow:h idden;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+
 }
+
 h1 {
  color: brown;
 }
-h2 {
-    color: blue;
-}
-p .cd-link {
-  text-decoration: none;
+ p {
+  font-size: 1em;
 }
