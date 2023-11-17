@@ -1,43 +1,23 @@
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 html {
-    display:inline-flexbox;
-    margin-top: 20px;
-    text-align:center;
+  margin-top: 40px;
+    text-align: center;
+    size: 1.5em;
+    background-color: azure;
 } 
-nav .topnav {
-  background-color: rgb(38, 34, 34);
-  font-size: 2em;
+body {
+  line-height: 50px;
 }
-.topnav ul li {
-  font-family: 'Courier New', Courier, monospace;
-  font-weight:900;
-  color: chocolate;
-  
-}
- nav ul li a{ 
-  list-style: none; 
-  text-decoration: none;
-  float: right;
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  align-items: center;
-  padding: 10px 12px;
-  color: rgb(12, 12, 12);
-
-  overflow: hidden;
-  transition: 0.4s;
-  position: fixed;
-  width: 100%;
-  z-index: 99;
-}
-
 h1 {
  color: brown;
 }
- p {
-  font-size: 1em;
+h2 {
+    color: blue;
+}
+p .cd-link {
+  text-decoration: none;
 }
