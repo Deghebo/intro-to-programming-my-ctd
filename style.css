@@ -2,25 +2,29 @@
   margin: 0;
   padding: 0;
 }
+
 html {
   display: inline-flexbox;
   margin-top: 20px;
   text-align: center;
 }
+
 nav .topnav {
   background-color: rgb(38, 34, 34);
   font-size: 2em;
 }
+
 .topnav ul li {
   font-family: "Courier New", Courier, monospace;
   font-weight: 900;
   color: chocolate;
 }
+
 nav ul li a {
   list-style: none;
   text-decoration: none;
   float: right;
-  display: block;
+  display: flex;
   text-decoration: none;
   text-align: center;
   align-items: center;
@@ -37,6 +41,7 @@ nav ul li a {
 h1 {
   color: brown;
 }
+
 p {
   font-size: 1em;
 }
