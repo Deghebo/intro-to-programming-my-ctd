@@ -7,6 +7,7 @@ html {
   display: inline-flexbox;
   margin-top: 20px;
   text-align: center;
+  line-height: 30px;
 }
 
 nav .topnav {
@@ -23,19 +24,18 @@ nav .topnav {
 nav ul li a {
   list-style: none;
   text-decoration: none;
-  float: right;
-  display: flex;
+  float: inline-end;
+  display: inline-flex;
   text-decoration: none;
   text-align: center;
   align-items: center;
   padding: 10px 12px;
   color: rgb(12, 12, 12);
-
   overflow: hidden;
   transition: 0.4s;
-  position: fixed;
+  position: relative;
   width: 100%;
-  z-index: 99;
+  z-index: 999;
 }
 
 h1 {
