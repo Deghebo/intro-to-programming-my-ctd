@@ -70,6 +70,12 @@ h6 {
   color: rgb(179, 80, 4);
 }
 
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+}
 div .my-image {
   float: left;
   width: 20px;
