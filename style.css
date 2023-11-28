@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  opacity: 1;
 }
 
 html {
@@ -8,11 +9,12 @@ html {
   text-align: center;
   line-height: 35px;
   align-content: normal;
+  font-size: 1em;
 }
 
 body {
   padding-top: 90px;
-  background-color: rgb(241, 237, 237);
+  background-color: rgb(90, 88, 88);
   min-height: 5555px;
   text-indent: 8px;
   letter-spacing: 2px;
@@ -26,7 +28,6 @@ nav {
   top: 0;
   margin: 0;
   background-color: rgb(206, 201, 201);
-  font-size: 2em;
   width: 100%;
   text-decoration: none;
   height: 70Px;
@@ -55,10 +56,28 @@ nav ul li a {
   text-align: center;
   align-items: center;
   padding: 10px 12px;
-  color: rgb(141, 46, 46);
+  color: rgb(141, 46, 46); 
   overflow: hidden;
   transition: 0.4s;
   position: relative;
+}
+
+a {
+  font-size: 1.3em;
+  transition: all 0.4s ease-in-out;
+}
+ /* mouse over link */
+a:hover {
+  background-color: aqua;
+  transform:translate(0, +6px);
+}
+/* unvisited link */
+a:link {
+  color:green
+}
+/* selected link */
+a:active {
+  color: red;
 }
 
 h1,
@@ -66,15 +85,14 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  color: rgb(179, 80, 4);
-}
-
+h6 
 h3,
 h4,
 h5,
 h6 {
-  color: black;
+  color: rgb(241, 162, 35);
+  justify-content: space-between;
+
 }
 div .my-image {
   float: left;
@@ -84,9 +102,13 @@ div .my-image {
 }
 
 p {
+  color: rgb(253, 253, 254);
   font-size: 1em;
 }
-
+#my-github {
+  text-decoration: none;
+  font-size: inherit;
+}
 .experience {
   text-decoration: none;
 }
@@ -94,7 +116,8 @@ p {
 .footer {
   background-color: rgb(245, 180, 95);
   text-transform: uppercase;
-  text-transform: unset;
-  letter-spacing: 7px;
+  text-transform: capitalize;
+  letter-spacing: 5px;
   word-spacing: 2px;
+  font-size: .9em;
 }
