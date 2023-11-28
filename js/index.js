@@ -2,15 +2,21 @@ const today = new Date();
 const thisYear = today.getFullYear();
 const footer = document.querySelector("footer");
 const copyright = document.createElement('p'); 
-document.getElementById('p').appendChild(copyright).innerHTML = `Chalew Degehebo ' + ' thisYear`;
+//document.getElementById('p').appendChild(copyright).innerHTML = `Chalew Degehebo ' + ' thisYear`;
+
+copyright.innerHTML = `&copy; ${thisYear} by Chalew Deghebo. All rights reserved. `
+
+footer.appendChild(copyright)
 
 const skills = ['HTML', 'CSS', 'JavaScript', 'bubble.io'];
 
 const skillsSection = document.getElementById('skills');
  
-const skillsList = for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-    const skill = createElement.listItem('li');
-};
+const skillsList = skillsSection.querySelector('ul')
 
-document.getElementById().appendChild(skill)
+for (let index = 0; index < skills.length; index++) {
+    
+    const skill = document.createElement('li');
+    skill.innerText = skills[index]
+    skillsList.appendChild(skill)
+};
