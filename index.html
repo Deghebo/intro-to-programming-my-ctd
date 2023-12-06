@@ -22,7 +22,6 @@
   </header>
 
   <body>
-
     <div class="photo">
       <img class="selfie" src="imgaes/my maize farm.jpeg">
     </div>
@@ -81,11 +80,27 @@
       </section>
 
       <div class="video-wrapper">
-        <h3>My Best Video, & Audio Collections!</h3>
+        <h5>My Best Video, & Audio Collections!</h5>
         <video src="https://teamtreehouse.com/library/javascript-basics/capture-input" type="video/mp4"
           controls></video>
       </div>
 
+      <section>
+        <h2>Leave a Message</h2>
+        <form name="leave_message">
+          <label for="usersName">User name:</label>
+          <input type="text" name="usersName" placeholder="Type user-name..." required> <br>
+          <label for="usersEmail">Email address:</label>
+          <input type="email" name="usersEmail" placeholder="Enter your email-address.." required> <br>
+          <textarea name="usersMessage" placeholder="Type your message here..." required></textarea>
+        </form>
+        <button type="submit" form="nameform" value="Submit">Submit</button>
+      </section>
+
+      <section id="message">
+        <h2>Messages</h2>
+        <ul></ul>
+      </section>
       <footer class="footer"></footer>
       <script src="js/index.js"></script>
     </div>
