@@ -100,11 +100,12 @@ h6 {
 }
 
 div .photo {
-  margin-right: 40px;
+  margin-right: 20px;
 }
 .main-content {
   position: absolute;
-  width: 75%;
+  width: 85%;
+  margin-left: 20px;
   /* top: 20%; */
   padding: 20%; 
   /* margin-left: 10px; */
@@ -113,8 +114,8 @@ div .photo {
  }  
  .selfie {
   float: left;
-  width:25%;
-  height: 300px;
+  width:15%;
+  height: 250px;
   /* left: 20px; */
   padding: 8px;
   margin-top: 300px;
