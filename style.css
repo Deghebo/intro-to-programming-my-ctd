@@ -2,37 +2,27 @@
   margin: 0;
   padding: 0;
   opacity: 1;
-  list-style: none;
 }
 
 html {
-  list-style: none;
   text-decoration: none;
   display: center;
   text-align: center;
-  line-height: 40px;
   align-content: center;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 body {
-  /* padding-top: 90px; */
   background-color: rgb(90, 88, 88);
   min-height: 5555px;
+  line-height: 20px;
   text-indent: 8px;
   letter-spacing: 2px;
   color: white;
-  list-style: none;
 }
 
 header {
-  top: 0;
-}
-
-nav {
-  top: 0;
-  margin: 0;
-  background-color: rgb(206, 201, 201);
+  /* background-color: rgb(94, 113, 65); */
   width: 100%;
   text-decoration: none;
   height: 50Px;
@@ -43,14 +33,18 @@ nav {
 .topnav ul {
   font-family: "Courier New", Courier, monospace;
   font-weight: 700;
-  color: rgb(174, 97, 42);
+  /* color: rgb(13, 13, 13); */
   display: flex;
-  background-color: rgb(147, 147, 147);
+  background-color: rgb(125, 124, 124);
   background-repeat: repeat-x;
   text-decoration: none;
-  list-style: none;
   width: 100%;
   justify-content: space-around;
+}
+ul {
+  color: brown;
+  list-style-type: none;
+  opacity: 1;
 }
 
 nav ul li a {
@@ -61,14 +55,15 @@ nav ul li a {
   text-align: center;
   align-items: center;
   padding: 10px 12px;
-  color: rgb(141, 46, 46); 
+  /* color: rgb(141, 46, 46);  */
   overflow: hidden;
   transition: 0.4s;
   position: relative;
 }
-
+li {
+  color:rgb(238, 236, 234);
+}
 a {
-  font-size: 1.3em;
   transition: all 0.4s ease-in-out;
 }
  /* mouse over link */
@@ -77,12 +72,12 @@ a:hover {
   transform:translate(0, +6px);
 }
 /* unvisited link */
-a:link {
-  color:green
-}
+/* a:link {
+  color:rgba(212, 15, 15, 0.262)
+} */
 /* selected link */
 a:active {
-  color: red;
+  color: rgb(0, 255, 123);
 }
 
 h1,

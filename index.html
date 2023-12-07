@@ -86,6 +86,25 @@
           controls></video>
       </div>
 
+      <section>
+        <h2>Leave a Message</h2>
+        <form name="leave_message">
+          <label for="usersFirstName">First name:</label>
+          <input type="text" name="usersName" placeholder="Enter first-name..." required> <br>
+          <label for="usersLastName">Last name:</label>
+          <input type="text" name="usersName" placeholder="Enter last-name"> <br>
+          <label for="usersEmail">Email-address:</label>
+          <input type="email" name="usersEmail" placeholder="Enter your email..." required> <br>
+          <textarea name="usersMessage" required></textarea> <br>
+          <button trpe="submit">Submit</button>
+        </form>
+      </section>
+
+      <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
+      </section>
+
       <footer class="footer"></footer>
       <script src="js/index.js"></script>
     </div>
