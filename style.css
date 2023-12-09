@@ -5,53 +5,70 @@
   opacity: 1;
 }
 
-html { 
+html {
   text-decoration: none;
   display: center;
   text-align: center;
-  line-height: 30px;
-  align-content: center;
-  font-size: 1.2em;
-}
-
-body {
-  background-color: rgb(90, 88, 88);
-  min-height: 5555px;
-  text-indent: 8px;
-  letter-spacing: 2px;
-  color: white;
-}
-
-header {
-  top: 0;
-}
-
-nav {
-  top: 0;
-  margin: 0;
-  background-color: rgb(206, 201, 201);
-  width: 100%;
-  text-decoration: none;
-  height: 50Px;
-  position: fixed;
-  z-index: 9999;
+  line-height: 15px;
+  align-content: normal;
+  font-size: 1.1em;
 }
 
 .topnav ul {
   font-family: "Courier New", Courier, monospace;
   font-weight: 700;
-  color: rgb(174, 97, 42);
+  /* color: rgb(13, 13, 13); */
   display: flex;
-  background-color: rgb(147, 147, 147);
+  /* background-color: rgb(125, 124, 124); */
   background-repeat: repeat-x;
   text-decoration: none;
-  list-style: none;
   width: 100%;
+  margin-top: 0px;
+  align-items: flex-end;
   justify-content: space-around;
+  list-style: none;
+  z-index: 9999;
 }
+
+header {
+  width: 100%;
+  margin-top: 0px;
+  text-decoration: none;
+  background-color: rgb(117, 61, 12);
+  height: 70Px;
+  position: fixed;
+  z-index: 999999;
+}
+
+.topnav ul {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  /* color: rgb(13, 13, 13); */
+  display: flex;
+  /* background-color: rgb(125, 124, 124); */
+  background-repeat: repeat-x;
+  text-decoration: none;
+  width: 100%;
+  margin-top: 0px;
+  align-items: flex-end;
+  justify-content: space-around;
+  list-style: none;
+}
+
 ul {
-  list-style-type: none;
+  list-style: none;
 }
+
+body {
+  text-indent: 8px;
+  letter-spacing: 2px;
+  color: white;
+  background-color: rgb(90, 88, 88);
+  /* min-height: 5555px; */
+  line-height: 20px;
+  /* padding-top: 90px; */
+}
+
 nav ul li a {
   list-style: none;
   text-decoration: none;
@@ -60,15 +77,18 @@ nav ul li a {
   text-align: center;
   align-items: center;
   padding: 10px 12px;
-  color: rgb(141, 46, 46); 
+  /* color: rgb(141, 46, 46);  */
   overflow: hidden;
   transition: 0.4s;
   position: relative;
 }
 
+li {
+  color:rgb(238, 236, 234);
+}
 a {
   font-size: 1.3em;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
  /* mouse over link */
 a:hover {
@@ -76,12 +96,12 @@ a:hover {
   transform:translate(0, +6px);
 }
 /* unvisited link */
-a:link {
-  color:green
-}
+/* a:link {
+  color:rgba(212, 15, 15, 0.262)
+} */
 /* selected link */
 a:active {
-  color: red;
+  color: rgb(0, 255, 123);
 }
 
 h1,
@@ -113,7 +133,7 @@ div .photo {
  }  
  .selfie {
   float: left;
-  width:25%;
+  width: 25%;
   height: 300px;
   /* left: 20px; */
   padding: 8px;
