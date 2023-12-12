@@ -21,46 +21,37 @@ for (let index = 0; index < skills.length; index++) {
     skillsList.appendChild(skill)
 };
 // Handle message form Submit
-const messageForm = document.getElementsByName('leave_message');
+const messageForm = document.getElementById('leave_message');
 console.log(messageForm);
-console.log(messageForm[0]);
 // const input = form.querySelector('input');
 
-messageForm[0].addEventListener('submit', (event) => {
+messageForm.addEventListener('submit', (event) => {
     event.preventDefault(); //prevent default browser refresh event
     // obtain values of the form 
-    const firstName = event.target.usersFirstName.value;
-    const lastName = event.target.usersLastName.value;
-    const email = event.target.usersEmail.value;
-    const userMessage = event.target.usersMessage.value;
-    console.log(firstName, lastName, email, userMessage); /* register values in console*/
+    const userName = event.target.querySelector('[name="usersName"]').value;
+    const email = event.target.querySelector('[name="usersEmail"]').value;
+    const userMessage = event.target.querySelector('[name="usersEmail"]').value;
+    console.log(userName); /* register values in console*/
+    console.log(email);
+    console.log(userMessage);
     /* console.log(input.value); */
-    messageForm.reset();  /* clear the form fields */
+
     /* create list display message */
-    const messageSection = document.geteElementById('messages');
+    const messageSection = document.geteElementsById('messages');
     const messageList = messageSection.querySelector('ul')
     const newMessage = document.createElement('li');
-    // newMessage.innerText = `${<a></a>}`
-
-    onsubmit = (event) => { };
-
-    // newMessage.innerText = `${name} (${email}): ${userMessage}`;
-    messageList.appendChild(newMessage)
+    newMessage.innerHTML = `<a href="mailto:${usersEmail}">${userName}</a>${usersEmail}`
 
     const removeButton = document.createElement('Button');
-    removeButton.innerText = remove;
-    removeButton.addEventListener('remove', (event) => {
-        const entry = document.querySelector('li');
+    removeButton.innerText = "remove";
+    removeButton.type = "button";
+    removeButton.addEventListener('click', (event) => {
+        const entry = event.target.parentNode;
+        entry.remove();
     })
+    newMessage.appendChild(removeButton);
+    messageList.append(newMessage);
+
+    event.target.reset();  /* clear the form fields */
 })
 
-// Get all elements with the name "exampleName"
-// const elements = document.getElementsByName("exampleName");
-
-// Loop through the collection and add an event listener to each element
-// for (let i = 0; i < elements.length; i++) {
-//     elements[i].addEventListener("click", function () {
-//         // Your event handler code here
-//         console.log(`Element ${i} clicked`);
-//     });
-// }

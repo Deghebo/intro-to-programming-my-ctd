@@ -121,10 +121,17 @@ h6 {
 
 }
 
+<<<<<<< HEAD
 
+=======
+div .photo {
+  margin-right: 20px;
+}
+>>>>>>> origin/lesson-4-3
 .main-content {
   position: absolute;
-  width: 75%;
+  width: 85%;
+  margin-left: 20px;
   /* top: 20%; */
   padding: 20%; 
   /* margin-left: 10px; */
@@ -137,8 +144,13 @@ h6 {
 }
  .selfie {
   float: left;
+<<<<<<< HEAD
   width: 15%;
   height: 300px;
+=======
+  width:15%;
+  height: 250px;
+>>>>>>> origin/lesson-4-3
   /* left: 20px; */
   padding: 15px;
   margin-top: 300px;
