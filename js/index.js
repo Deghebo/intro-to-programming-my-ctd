@@ -4,7 +4,7 @@ const footer = document.querySelector("footer");
 const copyright = document.createElement('p');
 //document.getElementById('p').appendChild(copyright).innerHTML = `Chalew Degehebo ' + ' thisYear`;
 
-copyright.innerHTML = `&copy; ${thisYear} by Chalew Deghebo. All rights reserved. `
+copyright.innerHTML = `&copy; ${thisYear} by Chalew Deghebo. All rights reserved.`
 
 footer.appendChild(copyright)
 
@@ -15,16 +15,13 @@ const skillsSection = document.getElementById('skills');
 const skillsList = skillsSection.querySelector('ul')
 
 for (let index = 0; index < skills.length; index++) {
-
     const skill = document.createElement('li');
-    skill.innerText = skills[index]
-    skillsList.appendChild(skill)
+    skill.innerText = skills[index];
+    skillsList.appendChild(skill);
 };
 // Handle message form Submit
-const messageForm = document.getElementById('leave_message');
-console.log(messageForm);
-// const input = form.querySelector('input');
-
+const messageForm = document.getElementsById('leave_message');
+// console.log(messageForm);
 messageForm.addEventListener('submit', (event) => {
     event.preventDefault(); //prevent default browser refresh event
     // obtain values of the form 
@@ -34,16 +31,16 @@ messageForm.addEventListener('submit', (event) => {
     console.log(userName); /* register values in console*/
     console.log(email);
     console.log(userMessage);
-    /* console.log(input.value); */
+    // console.log(input.value);
 
     /* create list display message */
-    const messageSection = document.geteElementsById('messages');
+    const messageSection = document.geteElementById('messages');
     const messageList = messageSection.querySelector('ul')
     const newMessage = document.createElement('li');
-    newMessage.innerHTML = `<a href="mailto:${usersEmail}">${userName}</a>${usersEmail}`
+    newMessage.innerHTML = `<a href="mailto:${userEmail}">${userName}</a><span>${userMessage}</span>`;
 
     const removeButton = document.createElement('Button');
-    removeButton.innerText = "remove";
+    removeButton.innerText = "Remove";
     removeButton.type = "button";
     removeButton.addEventListener('click', (event) => {
         const entry = event.target.parentNode;
@@ -51,6 +48,7 @@ messageForm.addEventListener('submit', (event) => {
     })
     newMessage.appendChild(removeButton);
     messageList.append(newMessage);
+    // console.log(`messageForm ${i} clicked`);
 
     event.target.reset();  /* clear the form fields */
 })
