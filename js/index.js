@@ -10,7 +10,7 @@ footer.appendChild(copyright)
 
 const skills = ['HTML', 'CSS', 'JavaScript', 'bubble.io'];
 
-const skillsSection = document.getElementById('skills');
+const skillsSection = document.getElementsById('skills');
 
 const skillsList = skillsSection.querySelector('ul')
 
@@ -20,16 +20,16 @@ for (let index = 0; index < skills.length; index++) {
     skillsList.appendChild(skill);
 };
 // Handle message form Submit
-const messageForm = document.getElementsById('leave_message');
+const messageForm = document.getElementById('leave_message');
 // console.log(messageForm);
 messageForm.addEventListener('submit', (event) => {
     event.preventDefault(); //prevent default browser refresh event
     // obtain values of the form 
     const userName = event.target.querySelector('[name="usersName"]').value;
-    const email = event.target.querySelector('[name="usersEmail"]').value;
-    const userMessage = event.target.querySelector('[name="usersEmail"]').value;
+    const userEmail = event.target.querySelector('[name="usersEmail"]').value;
+    const userMessage = event.target.querySelector('[name="usersMessage"]').value;
     console.log(userName); /* register values in console*/
-    console.log(email);
+    console.log(userEmail);
     console.log(userMessage);
     // console.log(input.value);
 
