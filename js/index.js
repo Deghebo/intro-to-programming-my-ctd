@@ -10,7 +10,7 @@ footer.appendChild(copyright)
 
 const skills = ['HTML', 'CSS', 'JavaScript', 'bubble.io'];
 
-const skillsSection = document.getElementsById('skills');
+const skillsSection = document.getElementById('skills');
 
 const skillsList = skillsSection.querySelector('ul')
 
@@ -34,7 +34,7 @@ messageForm.addEventListener('submit', (event) => {
     // console.log(input.value);
 
     /* create list display message */
-    const messageSection = document.geteElementById('messages');
+    const messageSection = document.getElementById('messages');
     const messageList = messageSection.querySelector('ul')
     const newMessage = document.createElement('li');
     newMessage.innerHTML = `<a href="mailto:${userEmail}">${userName}</a><span>${userMessage}</span>`;
