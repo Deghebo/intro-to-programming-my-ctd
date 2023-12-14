@@ -7,7 +7,8 @@
 html, body{
   box-sizing: border-box;
   height: 100%;
-  align-items: safe center;
+  align-items: center;
+  color: black;
 }
 
 html {
@@ -22,8 +23,10 @@ html {
 body {
   text-indent: 8px;
   letter-spacing: 3px;
-  color: white;
+  margin-bottom: 840px;
+  /* color: rgb(5, 4, 4); */
   background-color: rgb(122, 121, 121);
+  font-size: 1.1em;
   line-height: 30px;
   min-height: 100vh;
 }
@@ -32,6 +35,8 @@ header {
   width: 100%;
   height: 50Px;
   position: fixed;
+  flex-grow: 0;
+  flex-shrink: 0;
   text-decoration: none;
   background-color: rgb(128, 70, 15);
   opacity: .99;
@@ -131,6 +136,7 @@ h6 {
   margin-top: 40px;
   margin-left: 70px;
   padding-left: 40px;
+  flex-direction: column;
   /* top: 20%; */
   /* margin-left: 10px; */
   align-items: stretch;
@@ -148,20 +154,21 @@ h6 {
   padding: 5px;
   margin-top: 150px;
   margin-left: 25px;
+  border-radius: 30% 5% 10% 20%;
   /*margin-left: 20px; */
   border: 3px solid transparent;
   border-image: url(imgaes/my\ maize\ farm.jpeg) 30 round;
   }
   
- p {
+ /* p {
   color: rgb(253, 253, 254);
   list-style: none;
-}
+} */
 
 #my-github {
+  color: rgb(240, 131, 6);
   text-decoration: none;
   font-size: inherit;
-  color: rgb(18, 18, 17);
 }
 
 .experience {
@@ -171,11 +178,16 @@ h6 {
 .footer {
   width: 100%;
   margin-bottom: 30px;
-  padding: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 10px;
+  flex-grow: 0;
+  flex-shrink: 0;
   text-transform:uppercase;
   letter-spacing: 5px;
   word-spacing: 2px;
   font-size: .7em;
   background-color: rgb(57, 56, 56);
   position: absolute;
+  z-index: -1;
 }
