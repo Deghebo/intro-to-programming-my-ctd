@@ -43,13 +43,17 @@ messageForm.addEventListener('submit', (event) => {
     if (document.getElementById("messages").value == "") {
         document.querySelector("ul").style.display = "none";
     }
-    messageSection.style.justifyContent = "space-between";
+    messageSection.style.justifyContent = "space-around";
 
     // messageSection.style.paddingInline = "20px"
     const removeButton = document.createElement('Button');
     removeButton.innerText = "Remove";
     removeButton.type = "button";
     removeButton.style.backgroundColor = "red";
+    removeButton.style.borderStyle = "solid";
+    removeButton.style.padding = "5px 5px";
+    removeButton.style.alignItems = "stretch";
+    removeButton.style.alignContent = "space-around";
     removeButton.addEventListener('click', (event) => {
         const entry = event.target.parentNode;
         entry.remove();
@@ -61,20 +65,19 @@ messageForm.addEventListener('submit', (event) => {
     editButton.innerText = "Edit";
     editButton.type = "button";
     editButton.style.backgroundColor = "orange";
-    editButton.style.width = "60px";
+    editButton.style.width = "80px";
+    editButton.style.borderColor = "green";
+    editButton.style.borderStyle = "solid";
+    editButton.style.borderRadius = "35% 10%";
+    editButton.style.borderWidth = "5px"
+    editButton.style.padding = "5px 5px";
     editButton.addEventListener('click', (e) => {
         // const entry = event.target.parentNode;
-        // entry.edit();
+        entry.edit();
         newMessage.contentEditable = true;
     })
     newMessage.appendChild(editButton);
-    messageList.appendChild(newMessage);
+    messageList.append(newMessage);
 
     event.target.reset();  /* clear the form fields */
 })
-
-
-// messageForm.style.backgroundColor: "white";
-
-// if (document.getElementById("name").value == "") {
-//     document.querySelector(".hidden").style.display = "block"
