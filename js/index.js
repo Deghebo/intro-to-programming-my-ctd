@@ -2,11 +2,9 @@ const today = new Date();
 const thisYear = today.getFullYear();
 const footer = document.querySelector("footer");
 const copyright = document.createElement('p');
-//document.getElementById('p').appendChild(copyright).innerHTML = `Chalew Degehebo ' + ' thisYear`;
-
+const contact = document.createElement('p');
 copyright.innerHTML = `&copy; ${thisYear} by Chalew Deghebo. All rights reserved.`
-
-footer.appendChild(copyright)
+footer.appendChild(copyright);
 
 const skills = ['HTML', 'CSS', 'JavaScript', 'bubble.io'];
 
@@ -28,7 +26,10 @@ messageForm.addEventListener('submit', (event) => {
     const userName = event.target.querySelector('[name="usersName"]').value;
     const userEmail = event.target.querySelector('[name="usersEmail"]').value;
     const userMessage = event.target.querySelector('[name="usersMessage"]').value;
-    console.log(userName); /* register values in console*/
+    messageForm.style.backgroundColor = "#3F000F";
+    messageForm.style.rowGap = "10px";
+    /* register values in console*/
+    console.log(userName);
     console.log(userEmail);
     console.log(userMessage);
     // console.log(input.value);
@@ -38,18 +39,42 @@ messageForm.addEventListener('submit', (event) => {
     const messageList = messageSection.querySelector('ul')
     const newMessage = document.createElement('li');
     newMessage.innerHTML = `<a href="mailto:${userEmail}">${userName}</a><span>${userMessage}</span>`;
+    // messageSection.style.rowGap = "30px";
+    if (document.getElementById("messages").value == "") {
+        document.querySelector("ul").style.display = "none";
+    }
+    messageSection.style.justifyContent = "space-between";
 
+    // messageSection.style.paddingInline = "20px"
     const removeButton = document.createElement('Button');
     removeButton.innerText = "Remove";
     removeButton.type = "button";
+    removeButton.style.backgroundColor = "red";
     removeButton.addEventListener('click', (event) => {
         const entry = event.target.parentNode;
         entry.remove();
     })
     newMessage.appendChild(removeButton);
     messageList.append(newMessage);
-    // console.log(`messageForm ${i} clicked`);
+
+    const editButton = document.createElement('Button');//edit button allows the user to input a new/modified message
+    editButton.innerText = "Edit";
+    editButton.type = "button";
+    editButton.style.backgroundColor = "orange";
+    editButton.style.width = "60px";
+    editButton.addEventListener('click', (e) => {
+        // const entry = event.target.parentNode;
+        // entry.edit();
+        newMessage.contentEditable = true;
+    })
+    newMessage.appendChild(editButton);
+    messageList.appendChild(newMessage);
 
     event.target.reset();  /* clear the form fields */
 })
 
+
+// messageForm.style.backgroundColor: "white";
+
+// if (document.getElementById("name").value == "") {
+//     document.querySelector(".hidden").style.display = "block"
