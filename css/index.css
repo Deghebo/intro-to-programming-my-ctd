@@ -65,6 +65,9 @@ section {
 }
 .selfie {
   width: 250px;
+  float: left;
+  margin-top: 80px;
+  padding: 20px;
 }
 
 #intro ul li {
