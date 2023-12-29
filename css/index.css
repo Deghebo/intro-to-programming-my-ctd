@@ -66,10 +66,15 @@ section {
 .selfie {
   width: 250px;
 }
-#my_experiences {
-  display: block;
-  /* list-style-type: none; */
+
+#intro ul li {
+  list-style: none;
 }
+#my_experiences ul li {
+  display: block;
+  list-style-type: none;
+}
+
 #skills {
   display: block;
 }
