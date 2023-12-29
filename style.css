@@ -25,7 +25,7 @@ body {
   color: white;
   /* color: rgb(5, 4, 4); */
   background-color: rgb(122, 121, 121);
-  font-size: 1.5em;
+  font-size: 1.2em;
   line-height: 30px;
   min-height: 100vh;
 }
@@ -42,7 +42,7 @@ header {
   z-index: 999999;
 }
 
-.topnav ul {
+nav .topnav {
   font-family: "Courier New", Courier, monospace;
   font-weight: 700;
   /* color: rgb(13, 13, 13); */
@@ -58,7 +58,7 @@ header {
   z-index: 9999;
 }
 
-.topnav ul {
+ul .topnav {
   width: 100%;
   margin-top: 0px;
   font-family: "Courier New", Courier, monospace;
@@ -114,16 +114,7 @@ a:active {
   color: rgb(0, 255, 123);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 
-h3,
-h4,
-h5,
-h6 {
+h1,h2,h3,h4,h5,h6  {
   color: rgb(241, 162, 35);
   justify-content: space-between;
 
@@ -142,7 +133,7 @@ h6 {
   justify-content: center;
  }  
 
- /* div .photo {
+ /* div .my_photo {
   margin-right: 20px;
 } */
  .selfie {

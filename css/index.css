@@ -1,0 +1,156 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+body {
+  background-color: rgb(247, 210, 181);
+  color: blue;
+  font-size: 1.7em;
+  min-height: 100vw;
+}
+
+header {
+  background-color: rgb(29, 27, 27);
+  background-repeat: repeat;
+  width: 100%;
+}
+
+ .topnav {
+  font-size: larger;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+  /* color: rgb(13, 13, 13); */
+  display: flex;
+  /* background-color: rgb(125, 124, 124); */
+  background-repeat: repeat;
+  text-decoration: none;
+  width: 100%;
+  min-height: 10vh;
+  margin-top: 0;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: justify;
+  list-style: none;
+  z-index: 9999;
+}
+ ul .topnav li a{
+  overflow: hidden;
+  transition: 0.5s;
+  /* transform: translate(0, +20%); */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: firebrick;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+p {
+  font-size: 1.5em;
+  /* margin: 20px; */
+}
+
+#parent-body {
+  margin: 20px;
+}
+section {
+  margin: 50px;
+  padding: 5px;
+}
+
+ .my_photo {
+  width: 20px;
+}
+.selfie {
+  width: 250px;
+}
+#my_experiences {
+  display: block;
+  /* list-style-type: none; */
+}
+#skills {
+  display: block;
+}
+
+#leave_message {
+  color: black;
+  display: inline-block;
+  padding: 20px;
+  margin: 10px;
+  font-style: italic;
+  font-weight: bold;
+  background-color: tan;
+}
+input {
+  font-size: 20px;
+  font-family: monospace;
+  min-height: 40px;
+  padding: 5px;
+  margin: 10px;
+}
+#msg-detail {
+  font-size: 20px;
+  background-color: lightblue;
+}
+.btn {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 8px;
+  width: 180px;
+  border: 3px;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: cyan;
+  background-color:rgb(56, 50, 50);
+}
+#messages {
+  display: block;
+  padding: 5px;
+  font-size: 30px;
+  text-align: start;
+  align-content: space-around;
+}
+#messages ul {
+  display: block;
+}
+
+
+a:-webkit-any-link {
+  color:rgb(0, 183, 255);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  color: firebrick;
+  background-color:cyan;
+  transform: translate(0, +20%);
+}
+
+a:active {
+  color: aquamarine;
+  background-color: darkgreen;
+}
+a:current {
+  background-color: darkgreen;
+  color: green;
+}
+
+.footer {
+  color: white;
+  width: 100%;
+  min-height: 100px;
+  text-align: center;
+  display: flexbox;
+  padding:15px;
+  margin: 0;
+  background-color: rgb(117, 111, 111);
+  text-transform: capitalize; /*Capitalizes first letter of each words.
+  Use 'uppercase' to change all letters to capital.*/
+  font-style: italic;
+  font-size: .9em;
+  z-index: -1;
+}

@@ -3,7 +3,7 @@ const thisYear = today.getFullYear();
 const footer = document.querySelector("footer");
 const copyright = document.createElement('p');
 const contact = document.createElement('p');
-copyright.innerHTML = `&copy; ${thisYear} by Chalew Deghebo. All rights reserved.`
+copyright.innerHTML = `Copyright &copy; ${thisYear} by Chalew Deghebo. All rights reserved.`
 footer.appendChild(copyright);
 
 const skills = ['HTML', 'CSS', 'JavaScript', 'bubble.io'];
@@ -26,7 +26,7 @@ messageForm.addEventListener('submit', (event) => {
     const userName = event.target.querySelector('[name="usersName"]').value;
     const userEmail = event.target.querySelector('[name="usersEmail"]').value;
     const userMessage = event.target.querySelector('[name="usersMessage"]').value;
-    messageForm.style.backgroundColor = "#3F000F";
+    // messageForm.style.backgroundColor = "#3F000F";
     messageForm.style.rowGap = "10px";
     /* register values in console*/
     console.log(userName);
@@ -34,7 +34,7 @@ messageForm.addEventListener('submit', (event) => {
     console.log(userMessage);
     // console.log(input.value);
 
-    /* create list display message */
+    //* create list display message *//
     const messageSection = document.getElementById('messages');
     const messageList = messageSection.querySelector('ul')
     const newMessage = document.createElement('li');
@@ -44,14 +44,16 @@ messageForm.addEventListener('submit', (event) => {
         document.querySelector("ul").style.display = "none";
     }
     messageSection.style.justifyContent = "space-around";
+    messageSection.style.padding = "20px"
 
     // messageSection.style.paddingInline = "20px"
     const removeButton = document.createElement('Button');
     removeButton.innerText = "Remove";
     removeButton.type = "button";
-    removeButton.style.backgroundColor = "red";
-    removeButton.style.borderStyle = "solid";
+    removeButton.style.fontSize = "20px"
     removeButton.style.padding = "5px 5px";
+    removeButton.style.backgroundColor = "yellow";
+    removeButton.style.borderStyle = "solid";
     removeButton.style.alignItems = "stretch";
     removeButton.style.alignContent = "space-around";
     removeButton.addEventListener('click', (event) => {
@@ -64,9 +66,9 @@ messageForm.addEventListener('submit', (event) => {
     const editButton = document.createElement('Button');//edit button allows the user to input a new/modified message
     editButton.innerText = "Edit";
     editButton.type = "button";
-    editButton.style.backgroundColor = "orange";
+    editButton.style.backgroundColor = "green";
     editButton.style.width = "80px";
-    editButton.style.borderColor = "green";
+    editButton.style.borderColor = "firebrick";
     editButton.style.borderStyle = "solid";
     editButton.style.borderRadius = "35% 10%";
     editButton.style.borderWidth = "5px"
